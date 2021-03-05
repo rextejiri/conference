@@ -14,7 +14,7 @@ export const getSessions = () => fetch(URL)
     return sessions
 });
 
-export const getSession = sessionId => {
+export const getSession = (sessionId )=> {
     return sessions.find(session => {
         return session.id === sessionId
     })
